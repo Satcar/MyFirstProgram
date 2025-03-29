@@ -1,13 +1,14 @@
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = scanner.nextLine();
+        hello(name);
+    }
 
-        double x, y, result;
-        x = Double.parseDouble(JOptionPane.showInputDialog("Enter x"));
-        y = Double.parseDouble(JOptionPane.showInputDialog("Enter y"));
-        result = Math.sqrt((x*x + y*y));
-        System.out.println(result);
-
+    static void hello(String name) {
+        System.out.println("Hello " + name);
     }
 }
