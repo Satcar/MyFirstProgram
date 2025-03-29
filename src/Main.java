@@ -2,11 +2,12 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        String name = JOptionPane.showInputDialog("Enter your name");
-        JOptionPane.showMessageDialog(null, "Hello " + name + "!");
 
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-        JOptionPane.showMessageDialog(null, "You are " + age + " years old!");
+        double x, y, result;
+        x = Double.parseDouble(JOptionPane.showInputDialog("Enter x"));
+        y = Double.parseDouble(JOptionPane.showInputDialog("Enter y"));
+        result = Math.sqrt((x*x + y*y));
+        System.out.println(result);
 
     }
 }
